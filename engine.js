@@ -10,7 +10,7 @@ let password = "";
 const max = 92;
 const min = 0;
 
-function generatepass() {
+function generatePass() {
   for (let i = 0; i <= 8; i++) {
     password += char[Math.floor(Math.random() * (max - min)) + min];
   }
@@ -19,4 +19,4 @@ function generatepass() {
   password = "";
 }
 
-document.querySelector(".btn").addEventListener("click", generatepass);
+document.querySelector(".btn").addEventListener("click", generatePass);
