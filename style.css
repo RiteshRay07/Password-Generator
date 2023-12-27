@@ -3,7 +3,8 @@
   padding: 0;
   background-color: #11b277;
   color: white;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .main-container {
   width: 100vw;
@@ -13,7 +14,7 @@
   align-items: center;
   flex-direction: column;
 }
-.title{
+.title {
   font-size: 50px;
 }
 .sm-container {
@@ -28,10 +29,9 @@
   margin: 40px auto;
   /* border: 2px solid rgba(12, 12, 12, 0.283); */
   border-radius: 10px;
-  box-shadow: 10px 10px 22px 0px rgba(0,0,0,0.75);
-  
+  box-shadow: 10px 10px 22px 0px rgba(0, 0, 0, 0.75);
 }
-input[type=text] {
+input[type="text"] {
   width: 80%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -41,18 +41,57 @@ input[type=text] {
   border: none;
   border-radius: 15px;
 }
-.btn{
+.btn {
   width: 60%;
-    color: white;
-    background-color: #0f9f6a;
-    padding: 10px 35px;
-    border-radius: 10px;
-    font-weight: bolder;
-    border: none;
-    cursor: pointer;
-    font-size: 150%;
+  color: white;
+  background-color: #0f9f6a;
+  padding: 10px 35px;
+  border-radius: 10px;
+  font-weight: bolder;
+  border: none;
+  cursor: pointer;
+  font-size: 150%;
 }
-.btn:hover{
-
+.btn:hover {
   background-color: #058657;
+}
+
+/* ------------------ */
+@media only screen and (max-width: 1280px) {
+  .sm-container {
+    width: 50%;
+    height: 45%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .sm-container {
+    width: 70%;
+    height: 55%;
+  }
+  .title {
+    font-size: 45px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .sm-container {
+    width: 85%;
+    height: 55%;
+  }
+  .title {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .title {
+    font-size: 26px;
+  }
+  .btn {
+    width: 88%;
+    font-size: 100%;
+  }
+  input[type="text"] {
+    width: 88%;
+
+    font-size: 20px;
+  }
 }
